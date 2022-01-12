@@ -1,0 +1,17 @@
+terraform version
+az version
+terraform init # .terraform version and lock file
+
+az login
+az extension add --upgrade -n account
+az account show # to see subscription
+az account subscription list
+#set the required subscription
+
+
+terraform plan
+terraform apply
+
+az group list --query "[?name=='TerraFormRG']"
+
+terraform destroy
